@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/style.css" >
+</head>
+<bod>
+    <header>
+        <H1>Calculadora</H1>
+    </header>
+    <main class="calculator">
+        <table>
+            <tr>
+                <td>
+                    <label>primer numero</label>
+                    <input type="number" id="p1" name="">
+                </td>
+                <td>
+                    <label>Segundo numero</label>
+                    <input type="number" id="s2" name="">
+                </td>
+                <td>
+                    <label>igual</label>
+                    <input type="text" id="Restultado" name="">
+                </td>
+
+            </tr>
+        </table>
+        <div class="operations">
+            <input type="button" id="sum" value="Sumar" onclick="calculate(sum);" name="sum">
+            <input type="button" id="res" value="restar" onclick="calculate(res);" name="res">
+            <input type="button" id="mul" value="multiplicacion" onclick="calculate(mul);" name="mul">
+            <input type="button" id="div" value="dividir" onclick="calculate(div);" name="div">
+            
+        </div>
+        </main>
+
+
+        <footer>
+            <h2>Calculadora desarollada por David Soto</h2>
+        </footer>
+
+
+
+        <script type="text/javascript">
+            
+            function calculate(elegir) {
+                var n1 = document.getElementById("p1").value * 1;
+                var n2 = document.getElementById("s2").value * 1;
+                var Restultado;
+                switch(elegir) {
+                    case sum: 
+                    R = n1 + n2;    
+                    break;
+                    case res:
+                    R =  n1 - n2;
+                    break;
+                    case mul: 
+                    R = n1 * n2; 
+                    break; 
+                    case div:
+                    R = n1 / n2;
+                    break;
+
+                             }
+                             document.getElementById("Restultado").value = R;
+            }
+
+
+
+        </script>
+
+
+  
+
+
+
+    </body>
+
+</html>

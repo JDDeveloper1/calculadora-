@@ -1,0 +1,46 @@
+
+html{
+
+    background: rgb(122, 121, 121);     
+
+}
+
+.calculator {
+    background: rgb(176, 176, 190);
+    padding-top: 2rem;
+}
+
+
+
+h1 {
+    text-align: center;
+    color:red;
+    font-size: 3.6rem;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+table {
+    margin-top: 2rem ;
+    display: grid;
+    justify-content: center;
+} 
+
+
+td {
+    display: inline;
+    margin:  1rem;
+}
+ .operations {
+     text-align: center;
+     padding: 2rem;
+     
+ }
+
+
+footer {
+    margin-top: 10rem;
+}
